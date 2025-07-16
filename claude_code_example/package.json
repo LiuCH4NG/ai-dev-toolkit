@@ -1,0 +1,6 @@
+{
+  "name": "claude_code_example",
+  "version": "1.0.0",
+  "description": "A simple example to demonstrate Claude Code functionality.",
+  "main": "index.js"
+}

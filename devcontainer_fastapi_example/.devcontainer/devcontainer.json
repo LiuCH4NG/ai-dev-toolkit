@@ -1,0 +1,24 @@
+{
+	"name": "FastAPI Dev Container",
+	"image": "mcr.microsoft.com/devcontainers/python:0-3.9",
+
+	"features": {},
+
+	"forwardPorts": [8000],
+
+	"postCreateCommand": "pip install -r requirements.txt",
+
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"python.pythonPath": "/usr/local/bin/python"
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance"
+			]
+		}
+	},
+
+	"remoteUser": "vscode"
+}

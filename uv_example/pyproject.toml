@@ -1,0 +1,7 @@
+[project]
+name = "uv-project-example"
+version = "0.1.0"
+description = "A modern Python project managed with uv."
+dependencies = [
+    "requests==2.31.0"
+]

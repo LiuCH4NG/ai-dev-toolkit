@@ -1,0 +1,22 @@
+{
+	"name": "Vue.js Dev Container",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
+
+	"features": {},
+
+	"forwardPorts": [8080],
+
+	"postCreateCommand": "npm install",
+
+	"customizations": {
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"octref.vetur",
+				"esbenp.prettier-vscode"
+			]
+		}
+	},
+
+	"remoteUser": "node"
+}
