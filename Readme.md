@@ -1,19 +1,16 @@
+# AI 赋能的现代开发工具链
 
-# 提升开发效率：AI与新一代工具链培训手册
+本项目旨在汇集一系列前沿的AI辅助开发工具和新一代开发实践，帮助开发者提升效率、优化工作流程。通过本仓库提供的文档和示例，您可以深入了解并掌握这些工具的核心功能和应用场景。
 
-## 一、 引言
-
-大家好！
-
-为了帮助团队提升开发效率、优化工作流程，我们引入了一系列前沿的开发工具。本次培训将重点介绍这些工具的核心功能、应用场景及最佳实践，旨在让每一位团队成员都能熟练运用它们，编写出更优质、更健壮的代码。
-
-我们将要学习的工具涵盖了Python环境管理、智能编码辅助以及新一代的命令行工具。
+本仓库涵盖了Python环境管理、智能编码辅助、自主AI智能体以及强大的终端开发工具。
 
 ---
 
 ## 二、 Python的现代化项目管理核心：UV
 
 `uv` 是一个用Rust编写的高性能Python包和项目管理器。它不仅是 `pip` 的极速替代品，更是一个围绕 `pyproject.toml` 构建的现代化项目管理工具，旨在提供快速、可靠且易于使用的Python环境和依赖管理。
+
+*   **GitHub**: [astral-sh/uv](https://github.com/astral-sh/uv)
 
 ### 核心优势
 
@@ -67,11 +64,13 @@
 
 ## 三、 VSCode智能编码插件
 
-我们将在VSCode中集成三款强大的AI编码插件：`CodeGeex`、`Lingma` 和 `Continue`。它们将为我们提供智能的代码补全、代码生成、实时答疑等功能。
+本项目将介绍三款强大的AI编码插件：`CodeGeex`、`Lingma` 和 `Continue`。它们为开发者提供智能的代码补全、代码生成、实时答疑等功能。
 
 ### 1. CodeGeex
 
 `CodeGeex` 由智谱AI开发，基于其百亿参数的大模型，支持超过20种编程语言。
+
+*   **GitHub**: [THUDM/CodeGeeX](https://github.com/THUDM/CodeGeeX)
 
 *   **核心功能**:
     *   **代码生成与补全**: 根据自然语言描述或上下文自动生成代码。
@@ -83,6 +82,8 @@
 
 `Lingma` 由阿里云开发，深度集成于IDE，旨在提升编码效率。
 
+*   **GitHub**: [alibaba/Lingma](https://github.com/alibaba/Lingma) (请注意，此链接可能指向模型而非VSCode插件本身，但为最相关)
+
 *   **核心功能**:
     *   **上下文感知代码补全**: 提供行级和函数级的智能建议。
     *   **自然语言生成代码**: 将你的想法直接转换成代码。
@@ -91,6 +92,8 @@
 ### 3. Continue
 
 `Continue` 是一个开源的AI代码助手，其最大的特点是高度的可定制性。
+
+*   **GitHub**: [continuedev/continue](https://github.com/continuedev/continue)
 
 *   **核心功能**:
     *   **本地模型支持**: 可以配置使用本地运行的AI模型，保障代码的私密性。
@@ -106,6 +109,8 @@
 
 `Cline` 是一款开源的AI编码助手，它更像一个自主的AI智能体，可以直接在你的IDE中执行任务。
 
+*   **GitHub**: [cline-bot/cline](https://github.com/cline-bot/cline)
+
 ### 核心优势
 
 *   **终端集成**: `Cline` 能够直接执行shell命令，例如安装依赖 (`npm install`)、运行测试 (`npm test`) 等。
@@ -113,7 +118,7 @@
 *   **浏览器交互**: 能够与浏览器进行交互，用于测试网页或捕获截图。
 *   **自我修正**: `Cline` 会监控linter和编译器的错误，并尝试自我修正。
 
-`Cline` 的引入，将使我们能够通过自然语言完成更复杂的开发任务，而不仅仅是代码生成。
+`Cline` 的引入，将使开发者能够通过自然语言完成更复杂的开发任务，而不仅仅是代码生成。
 
 ---
 
@@ -124,6 +129,8 @@
 ### 1. Gemini CLI
 
 由Google开发，`Gemini CLI` 让你可以在终端中与Gemini模型直接交互。
+
+*   **GitHub**: [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)
 
 *   **核心功能**:
     *   **代码辅助**: 编写、重构、调试代码，甚至生成单元测试。
@@ -138,6 +145,8 @@ npx https://github.com/google-gemini/gemini-cli
 ### 2. Claude Code
 
 由Anthropic开发，`Claude Code` 是一个具有“代理”能力的编码工具，能深度理解你的代码库。
+
+*   **GitHub**: [anthropics/claude-code](https://github.com/anthropics/claude-code)
 
 *   **核心功能**:
     *   **代码库理解**: 能分析整个项目的结构和逻辑，回答复杂问题。
@@ -154,6 +163,8 @@ npm install -g @anthropic-ai/claude-code
 ## 六、 统一与隔离：VSCode开发容器 (Dev Containers)
 
 `Dev Containers` 是VSCode的一项革命性功能，它允许你将整个开发环境打包到一个Docker容器中。这解决了团队开发中最经典的痛点：“在我的电脑上是好的呀！”
+
+*   **GitHub**: [microsoft/vscode-dev-containers](https://github.com/microsoft/vscode-dev-containers) (核心仓库)
 
 ### 核心优势
 
@@ -173,13 +184,14 @@ npm install -g @anthropic-ai/claude-code
 
 ## 七、 总结与展望
 
-本次培训介绍的工具，从环境管理、编码辅助到终端交互，覆盖了我们日常开发的主要环节。
+本项目所介绍的工具，从环境管理、编码辅助到终端交互，覆盖了日常开发的主要环节。
 
-*   **UV** 将统一并加速我们的Python环境管理。
-*   **CodeGeex, Lingma, Continue** 将成为我们编码时的智能伙伴。
-*   **Cline** 将在VSCode中为我们执行更复杂的自动化任务。
-*   **Gemini CLI, Claude Code** 则让我们的终端变得前所未有的智能。
+*   **UV** 将统一并加速Python环境管理。
+*   **CodeGeex, Lingma, Continue** 将成为编码时的智能伙伴。
+*   **Cline** 将在VSCode中执行更复杂的自动化任务。
+*   **Gemini CLI, Claude Code** 则让终端变得前所未有的智能。
+*   **Dev Containers** 确保开发环境的一致性和可复现性。
 
-希望大家能够积极尝试和使用这些工具，将它们融入到自己的工作流中。熟练运用它们，不仅能提升个人的工作效率，也将推动整个团队的技术水平迈上新的台阶。
+我们鼓励开发者积极尝试和使用这些工具，将它们融入到自己的工作流中。熟练运用它们，不仅能提升个人的工作效率，也将推动整个团队的技术水平迈上新的台阶。
 
 **开始探索，享受高效编码的乐趣吧！**
