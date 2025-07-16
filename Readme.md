@@ -155,6 +155,30 @@ npx https://github.com/google-gemini/gemini-cli
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
+* For China users:
+1. 使用国内中转代理：[anyrouter(暂时暂停注册)](https://anyrouter.top/register?aff=tKnP)
+```bash
+    # 注册账号，申请API Key
+
+    # 配置环境变量
+    export ANTHROPIC_AUTH_TOKEN=sk-... 
+    export ANTHROPIC_BASE_URL=https://anyrouter.top
+    # 启动claude code
+    cd your-project-folder
+    claude
+```
+2. 使用兼容Anthropic的最新模型 [Kimi2](https://platform.moonshot.cn/console/api-key)
+```bash
+    # 注册账号，申请API Key
+
+    # 配置环境变量
+    export ANTHROPIC_AUTH_TOKEN=sk-... 
+    export ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic"
+    # 启动claude code
+    cd your-project-folder
+    claude
+```
+3. 使用开源项目 [claude-code-router](https://github.com/musistudio/claude-code-router)
 
 ---
 
