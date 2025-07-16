@@ -57,3 +57,39 @@
         使用斜杠命令 `/review`，`Claude Code` 会对指定文件进行代码审查，并给出建议。
 
 这个示例展示了 `Claude Code` 如何通过 `CLAUDE.md` 文件深度集成到你的项目中，理解并遵循你的编码规范，同时还能作为你的Git助手，简化版本控制操作。
+
+---
+
+## 中国用户配置
+
+对于中国用户，如果直接访问 Anthropic API 存在困难，可以考虑以下配置方式：
+
+1.  **使用国内中转代理：[anyrouter](https://anyrouter.top/register?aff=tKnP)**
+    *   注册账号，申请 API Key。
+    *   配置环境变量：
+        ```bash
+        export ANTHROPIC_AUTH_TOKEN=sk-...
+        export ANTHROPIC_BASE_URL=https://anyrouter.top
+        ```
+    *   启动 `claude code`：
+        ```bash
+        cd your-project-folder
+        claude
+        ```
+
+2.  **使用兼容 Anthropic 的最新模型 [Kimi2](https://platform.moonshot.cn/console/api-key)**
+    *   注册账号，申请 API Key。
+    *   建议充值50元解除 TPM 限制。
+    *   配置环境变量：
+        ```bash
+        export ANTHROPIC_AUTH_TOKEN=sk-...
+        export ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic"
+        ```
+    *   启动 `claude code`：
+        ```bash
+        cd your-project-folder
+        claude
+        ```
+
+3.  **使用开源项目 [claude-code-router](https://github.com/musistudio/claude-code-router)**
+    *   请参考项目文档进行部署和配置。
