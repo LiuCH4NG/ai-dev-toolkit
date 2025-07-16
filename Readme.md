@@ -156,7 +156,7 @@ npx https://github.com/google-gemini/gemini-cli
 npm install -g @anthropic-ai/claude-code
 ```
 * For China users:
-1. 使用国内中转代理：[anyrouter(暂时暂停注册)](https://anyrouter.top/register?aff=tKnP)
+1. 使用国内中转代理：[anyrouter](https://anyrouter.top/register?aff=tKnP)
 ```bash
     # 注册账号，申请API Key
 
@@ -170,7 +170,7 @@ npm install -g @anthropic-ai/claude-code
 2. 使用兼容Anthropic的最新模型 [Kimi2](https://platform.moonshot.cn/console/api-key)
 ```bash
     # 注册账号，申请API Key
-
+    # 建议充值50元 接触TPM限制
     # 配置环境变量
     export ANTHROPIC_AUTH_TOKEN=sk-... 
     export ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic"
