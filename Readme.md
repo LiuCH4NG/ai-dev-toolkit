@@ -164,9 +164,9 @@ npm install -g @anthropic-ai/claude-code
     * 创建一个账号，并获取 API Key（注册即送14元余额）
     * 配置环境变量：
         ```bash
-            export ANTHROPIC_BASE_URL="https://api.siliconflow.cn/"
-            export ANTHROPIC_MODEL="moonshotai/Kimi-K2-Instruct"    # 可以自行修改所需模型，目前仅支持非思考模型
-            export ANTHROPIC_API_KEY="YOUR_SILICONCLOUD_API_KEY"    # 请替换 API Key
+        export ANTHROPIC_BASE_URL="https://api.siliconflow.cn/"
+        export ANTHROPIC_MODEL="moonshotai/Kimi-K2-Instruct"    # 可以自行修改所需模型，目前仅支持非思考模型
+        export ANTHROPIC_API_KEY="YOUR_SILICONCLOUD_API_KEY"    # 请替换 API Key
         ```
     *   启动 `claude code`：
         ```bash
