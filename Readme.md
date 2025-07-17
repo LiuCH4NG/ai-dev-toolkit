@@ -160,7 +160,7 @@ npm install -g @anthropic-ai/claude-code
 
 对于中国用户，如果直接访问 Anthropic API 存在困难，可以考虑以下配置方式：
 
-1.  **Siliconflow[注册链接](https://cloud.siliconflow.cn/i/1HHkTRkK)**
+1.  **Siliconflow [注册链接](https://cloud.siliconflow.cn/i/1HHkTRkK)**
     * 创建一个账号，并获取 API Key（注册即送14元余额）
     * 配置环境变量：
         ```bash
