@@ -156,6 +156,54 @@ npx https://github.com/google-gemini/gemini-cli
 npm install -g @anthropic-ai/claude-code
 ```
 
+#### 中国用户配置
+
+对于中国用户，如果直接访问 Anthropic API 存在困难，可以考虑以下配置方式：
+
+1.  **Siliconflow[注册链接](https://cloud.siliconflow.cn/i/1HHkTRkK)**
+    * 创建一个账号，并获取 API Key（注册即送14元余额）
+    * 配置环境变量：
+        ```bash
+            export ANTHROPIC_BASE_URL="https://api.siliconflow.cn/"
+            export ANTHROPIC_MODEL="moonshotai/Kimi-K2-Instruct"    # 可以自行修改所需模型，目前仅支持非思考模型
+            export ANTHROPIC_API_KEY="YOUR_SILICONCLOUD_API_KEY"    # 请替换 API Key
+        ```
+    *   启动 `claude code`：
+        ```bash
+        cd your-project-folder
+        claude
+        
+
+2.  **使用国内中转代理：[anyrouter](https://anyrouter.top/register?aff=tKnP)**
+    *   注册账号，申请 API Key
+    *   配置环境变量：
+        ```bash
+        export ANTHROPIC_AUTH_TOKEN=sk-...
+        export ANTHROPIC_BASE_URL=https://anyrouter.top
+        ```
+    *   启动 `claude code`：
+        ```bash
+        cd your-project-folder
+        claude
+        ```
+
+3.  **使用兼容 Anthropic 的最新模型 [Kimi2](https://platform.moonshot.cn/console/api-key)**
+    *   注册账号，申请 API Key
+    *   建议充值50元解除 TPM 限制
+    *   配置环境变量：
+        ```bash
+        export ANTHROPIC_AUTH_TOKEN=sk-...
+        export ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic"
+        ```
+    *   启动 `claude code`：
+        ```bash
+        cd your-project-folder
+        claude
+        ```
+
+4.  **使用开源项目 [claude-code-router](https://github.com/musistudio/claude-code-router)**
+    *   请参考项目文档进行部署和配置
+
 
 ---
 
