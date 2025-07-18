@@ -174,7 +174,26 @@ npm install -g @anthropic-ai/claude-code
         claude
         
 
-2.  **使用国内中转代理：[anyrouter](https://anyrouter.top/register?aff=tKnP)**
+2.  **使用国内中转代理**
+    1. **[aicodemirror](https://www.aicodemirror.com/register?invitecode=8N93IF)**
+    *   注册账号，申请 API Key
+    *   配置环境变量：
+        ```bash
+        macOS / Windows WSL / Linux
+
+        export ANTHROPIC_BASE_URL=https://api.aicodemirror.com/api/claudecode
+        export ANTHROPIC_API_KEY=你的密钥
+        export ANTHROPIC_AUTH_TOKEN=""
+        ```
+        ```powershell
+        Windows 原生
+
+        $env:ANTHROPIC_BASE_URL="https://api.aicodemirror.com/api/claudecode"
+        $env:ANTHROPIC_API_KEY=你的密钥
+        $env:ANTHROPIC_AUTH_TOKEN=你的密钥
+        ```
+
+    2. **[anyrouter](https://anyrouter.top/register?aff=tKnP)**
     *   注册账号，申请 API Key
     *   配置环境变量：
         ```bash
