@@ -156,6 +156,19 @@ npx https://github.com/google-gemini/gemini-cli
 npm install -g @anthropic-ai/claude-code
 ```
 
+### 3. Qwen Code
+
+由 Qwen 开发，`Qwen Code` 可以免费调用Qwen coder 模型
+*  **GitHub**: [Qwen-Code](https://github.com/QwenLM/qwen-code)
+
+*   **核心优势**:
+    *   **免费**: 每日 2,000 次请求，无令牌限制，中国大陆：ModelScope 提供 每日 2,000 次免费 API 调用
+
+**安装 (需要Node.js):**
+```bash
+npm install -g @qwen-code/qwen-code@latest
+```
+
 #### 中国用户配置
 
 对于中国用户，如果直接访问 Anthropic API 存在困难，可以考虑以下配置方式：
@@ -206,7 +219,20 @@ npm install -g @anthropic-ai/claude-code
         claude
         ```
 
-3.  **使用兼容 Anthropic 的最新模型 [Kimi2](https://platform.moonshot.cn/console/api-key)**
+3.  使用兼容 Anthropic 的最新模型  
+    [ModelScope（推荐）](https://www.modelscope.cn/my/myaccesstoken)
+    *   免费每天可调用2000次
+    *   配置环境变量：
+        ```bash
+        #务必去掉开头的ms-前缀
+        export ANTHROPIC_API_KEY=sk-...
+        export ANTHROPIC_BASE_URL="https://api-inference.modelscope.cn"
+        export ANTHROPIC_MODEL=Qwen/Qwen3-Coder-480B-A35B-Instruct
+        # 默认配置的是 Qwen3-Coder，也可换成GLM-4.5等其他模型
+        ```
+
+
+    [Kimi2](https://platform.moonshot.cn/console/api-key)
     *   注册账号，申请 API Key
     *   建议充值50元解除 TPM 限制
     *   配置环境变量：
@@ -219,6 +245,7 @@ npm install -g @anthropic-ai/claude-code
         cd your-project-folder
         claude
         ```
+    [GLM4.5系列](https://www.bigmodel.cn/invite?icode=hAQMFs%2BuYIlK%2BYtwOwIbQHHEaazDlIZGj9HxftzTbt4%3D)
 
 4.  **使用开源项目 [claude-code-router](https://github.com/musistudio/claude-code-router)**
     *   请参考项目文档进行部署和配置
